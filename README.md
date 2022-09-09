@@ -56,6 +56,7 @@ https://varshithvhegde.github.io/chatbot
     - Command 'project' will give you the project of the creator.
     - Command 'help' will give you all the commands.
     - Command 'clear' will clear the chat window.
-- Easter Egg 'hi' will give you a response.
+- Easter Egg 'hi' ![frame_firefox_mac_dark (3)](https://user-images.githubusercontent.com/80502833/189382825-2a790d21-82fa-4ad1-94ce-8ac45e8ec62a.png)
+will give you a response.
 - And many more commands are there.
 
