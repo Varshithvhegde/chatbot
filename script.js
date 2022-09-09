@@ -132,10 +132,17 @@ function waitAndResponce(inputText) {
             break;
        
 
-
-        // case "new":
-        //     sendTextMessage(addressString);
-        //     break;
+        case "varshith":
+            sendTextMessage("Yes, that's me");
+            break;
+        case "varshith hegde":
+            sendTextMessage("Yes, that's me");
+            break;
+        case "varshith v hegde":
+            sendTextMessage("Yes, that's me");
+            break;
+        
+        
         default:
             setTimeout(() => {
                 sendTextMessage("Hey I couldn't catch you...😢<br>Send 'help' to know more about usage.");
