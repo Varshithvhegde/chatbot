@@ -1,9 +1,17 @@
-# CHATME
-## Demo 
-[Click Here](https://varshithvhegde.github.io/chatbot) for Live Demo
+# CHATBOT
 
-## Usage  
-- Type 'help' and then enter in the message field ,you will get all the required commands from there.
+## Table of Contents
+
+- [CHATBOT](#chatbot)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Future Scope](#future-scope)
+  - [Contributing](#contributing)
+  - [Usage](#usage)
+  - [Screenshots](#screenshots)
+  - [License](#license)
+  - [Author](#author)
 
 
 ## Introduction
@@ -58,4 +66,22 @@ https://varshithvhegde.github.io/chatbot
     - Command 'clear' will clear the chat window.
 - Easter Egg 'hi' will give you a response.
 - And many more commands are there.
+
+## Screenshots
+
+![frame_firefox_mac_dark (3)](https://user-images.githubusercontent.com/80502833/189382825-2a790d21-82fa-4ad1-94ce-8ac45e8ec62a.png)
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Author
+
+- Varshith V Hegde
+- [Github](https://github.com/Varshithvhegde)
+- [LinkedIn](https://www.linkedin.com/in/Varshithvhegde)
+
+
+
+
 
