@@ -153,7 +153,14 @@ function waitAndResponce(inputText) {
         case "blog":
             sendTextMessage("You can check my blog here <a target='_blank' href='https://varshithvhegde.github.io/hugo-blog'>Varshith Hegde</a>");
             break;
-
+        
+        case "github":
+            sendTextMessage("You can check my github here <a target='_blank' href='https://github.com/Varshithvhegde'>Varshith Hegde</a>");
+            break;
+        case "linkedin":
+            sendTextMessage("You can check my linkedin here <a target='_blank' href='https://www.linkedin.com/in/varshithvhegde'>Varshith Hegde</a>");
+            break;
+        
         
         default:
             setTimeout(() => {
