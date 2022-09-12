@@ -2,6 +2,7 @@ var audio = new Audio('assets/sentmessage.mp3');
 var contactString = "<div class='social'> <a target='_blank' href='tel:+916363549133'> <div class='socialItem' id='call'><img class='socialItemI' src='images/phone.svg'/><label class='number'></label></label></div> </a> <a href='mailto:varshithvh@gmail.com'> <div class='socialItem'><img class='socialItemI' src='images/gmail.svg' alt=''></div> </a> <a target='_blank' href='https://github.com/Varshithvhegde'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a> <a target='_blank' href='https://wa.me/916363549133'> <div class='socialItem'><img class='socialItemI' src='images/whatsapp.svg' alt=''>";
 var resumeString = "<img src='images/resume_thumbnail.png' class='resumeThumbnail'><div class='downloadSpace'><div class='pdfname'><img src='images/pdf.png'><label>Varshith V Hegde Resume.pdf</label></div><a href='assets/varshith_v_hegde_resume.pdf' download='varshith_v_hegde_resume.pdf'><img class='download' src='images/downloadIcon.svg'></a></div>";
 var addressString = "<div class='mapview'><iframe src='https://www.google.com/maps/dir//Moodbidri+private+Bus+Stand,+Bus+Stand+Rd,+Mudbidri,+Karnataka+574227/@13.0639,74.9991985,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba4ab3d49331379:0x17be05cb5b69caa2!2m2!1d74.9957298!2d13.0680955?hl=en' class='map'></iframe></div><label class='add'><address>B2 'Asara'<br>Kodoli<br>Kolhapur, Maharashtra, INDIA 416114</address>";
+
 function startFunction() {
     setLastSeen();
     waitAndResponce("intro");
@@ -69,6 +70,15 @@ function sendMsg() {
 function waitAndResponce(inputText) {
     var lastSeen = document.getElementById("lastseen");
     lastSeen.innerText = "typing...";
+    var name="";
+    if(inputText.toLowerCase().includes("my name is")){
+        name=inputText.substring(inputText.indexOf("is")+2);
+        if(name.toLowerCase().includes("varshith")){
+            sendTextMessage("Ohh! That's my name too");
+            
+        }
+        inputText="input";
+    }
     switch (inputText.toLowerCase().trim()) {
         case "intro":
             setTimeout(() => {
@@ -92,9 +102,7 @@ function waitAndResponce(inputText) {
             sendTextMessage("I am currently pusuing B.E degree in Computer Science Engineering from MITE Moodabidri<br>Passing Year : 2023<br><br>I have completed my PU from Excellent PU College Moodabidri<br>Passing Year:2019<br>Result:94%<br><br>I have completed my Secondary school from local school known as M K Shetty<br>Passing Year:2017");
             break;
 
-        // case "address":
-        //     sendTextMessage(addressString);
-        //     break;
+        
         case "clear":
             clearChat();
             break;
@@ -160,8 +168,17 @@ function waitAndResponce(inputText) {
         case "linkedin":
             sendTextMessage("You can check my linkedin here <a target='_blank' href='https://www.linkedin.com/in/varshithvhegde'>Varshith Hegde</a>");
             break;
-        
-        
+        case "friends":
+        case "friend":
+            sendTextMessage("I am always ready to make new friends");
+            break;
+        case "input":
+            setTimeout(()=>{
+                // sendTextMessage("What a coincidence!");
+                sendTextMessage("Hello "+name+"! How are you?");
+            },2000);
+            
+            break;
         default:
             setTimeout(() => {
                 sendTextMessage("Hey I couldn't catch you...😢<br>Send 'help' to know more about usage.");
@@ -172,6 +189,7 @@ function waitAndResponce(inputText) {
 
 
 }
+
 
 function clearChat() {
     document.getElementById("listUL").innerHTML = "";
